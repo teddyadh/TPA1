@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: #fff;
+}
+
+li {
+  list-style: none;
+  color: #fff;
+}
+
+#main_header {
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #141414, #1c1c1c, #242424, #262626);
+  background-size: 400%, 400%;
+  position: relative;
+  animation: changeGradient 10s ease-in-out infinite;
+}
+
+/* nav */
+#main_nav {
+  width: 70%;
+  margin: auto;
+}
+
+#main_nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+
+#main_nav ul li a {
+  font-size: calc(1.5rem + 1vw);
+  padding: 1rem;
+  color: var(--main-color);
+  transition: font-size 0.4s;
+}
+
+#main_nav ul li a:hover {
+  font-size: calc(1.8rem + 1vw);
+  cursor: pointer;
+}
+/* end nav */
+
+/* home */
+#home_section {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#home_section h2 {
+  font-size: calc(5rem + 1vw);
+  font-family: Lobster, sans-serif;
+  color: var(--main-color);
+  font-weight: 400;
+  padding: 1.5rem;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+#home_section p {
+  font-size: calc(2.2rem + 1vw);
+  font-family: Lobster, sans-serif;
+  color: var(--main-color);
+  font-weight: 400;
+  text-align: center;
+  padding: 1.5rem;
+}
+/* end home */
+
+/* about */
+#about_section {
+  min-height: 30vh;
+  background-color: #242424;
+}
+.about_header {
+  width: 80%;
+  min-height: 10vh;
+  margin: auto;
+}
+.about_header h3 {
+  color: var(--main-color);
+  text-align: center;
+  font-size: calc(2.5rem + 1vw);
+  padding: 3rem;
+}
+.about_info {
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about_info p {
+  color: var(--main-color);
+  font-size: calc(1.2rem + 1vw);
+}
+/* end about */
+
+/* portofolio/experience */
+#portoex_section {
+  min-height: 50vh;
+  background-color: #1c1c1c;
+}
+.portoex_header {
+  min-height: 10vh;
+  width: 80%;
+  margin: auto;
+}
+.portoex_header h3 {
+  color: var(--main-color);
+  font-size: calc(2.5rem + 1vw);
+  text-align: center;
+  padding: 3rem;
+}
+.main_portoex {
+  min-height: 40vh;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#portoex {
+  font-size: 1.8rem;
+  color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  margin: 1.2rem;
+  text-align: center;
+}
+/* end portofolio/experience */
